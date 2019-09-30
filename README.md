@@ -47,55 +47,52 @@ The solution for examples from other texts will be included soon.
 ## Smith Chart equations
 
 The voltage reflection coefficient is 
-\begin{equation}
-\label{eq:3}
+$$
 \Gamma = \cfrac{Z_{L}-Z_0}{Z_L+Z_0} = \left| \Gamma \right|e^{j\theta_{\Gamma}}
-\end{equation}
+$$
 The normalized impedance is 
-\begin{equation}
-\label{eq:6}
+$$
 z_L = \cfrac{Z_{L}}{Z_{0}} = \cfrac{R_{L}}{R_{0}}+j \cfrac{X_{l}}{Z_{0}}=r+jx
-\end{equation}
+$$
 
 Relation between $\Gamma$ and normalized impedance is 
-\begin{align*}
-\label{eq:7}
-\Gamma &=  \Gamma_r + i\Gamma_{i} = \cfrac{z_{L}-1}{z_L+1} \\
-  z_L &= r + jx = \cfrac{1+\Gamma}{1-\Gamma} \\
-       &= \cfrac{1-\Gamma_{r}^2-\Gamma_{i}^2}{(1-\Gamma_r)^2+\Gamma_i^2}
+$$
+\Gamma =  \Gamma_r + i\Gamma_{i} = \cfrac{z_{L}-1}{z_L+1} \\
+  z_L = r + jx = \cfrac{1+\Gamma}{1-\Gamma} \\
+       = \cfrac{1-\Gamma_{r}^2-\Gamma_{i}^2}{(1-\Gamma_r)^2+\Gamma_i^2}
          + \cfrac{2\Gamma_i}{(1-\Gamma_r)^2+\Gamma_i^2}
-\end{align*}
+$$
 
 The real part of the normalized impedance can be rearranged as
-\begin{align*}
-         r &=
+$$
+         r =
              \cfrac{1-\Gamma_{r}^2-\Gamma_{i}^2}{(1-\Gamma_r)^2+\Gamma_i^2}\\
-         r ( (1-\Gamma_r)^2+\Gamma_i^2) &=
+         r ( (1-\Gamma_r)^2+\Gamma_i^2) =
             1-\Gamma_{r}^2-\Gamma_{i}^2\\
-  r + r \Gamma_r^2 - 2 r \Gamma_r + r\Gamma_i^2 &=
+  r + r \Gamma_r^2 - 2 r \Gamma_r + r\Gamma_i^2 =
                      1-\Gamma_{r}^2-\Gamma_{i}^2\\
   r \Gamma_r^2 - 2 r \Gamma_r +\Gamma_r^2  + r\Gamma_i^2 + \Gamma_i^2
-  &= 1-r\\
+  = 1-r\\
    (1+r)\Gamma_r^2 - 2 r \Gamma_r  + (1+r)\Gamma_i^2 
-           &= 1-r\\
+           = 1-r\\
    \Gamma_r^2 - \cfrac{2r}{1+r}  \Gamma_r  + \Gamma_i^2 
-           &= \cfrac{1-r}{1+r} \\
+           = \cfrac{1-r}{1+r} \\
   \Gamma_r^2 - \cfrac{2r}{1+r}  \Gamma_r + \cfrac{r^{2}}{(1+r)^{2}} + \Gamma_i^2 
-           &= \cfrac{1-r}{1+r} + \cfrac{r^{2}}{(1+r)^{2}} \\
+           = \cfrac{1-r}{1+r} + \cfrac{r^{2}}{(1+r)^{2}} \\
   \left(  \Gamma_r - \cfrac{r}{1+r}  \right)^{2}  + \Gamma_i^2 
-           &= \cfrac{1}{(1+r)^{2}} 
-\end{align*}
+           = \cfrac{1}{(1+r)^{2}} 
+$$
 
 The imaginary part of the normalized impedance can be rearranged as
 
-\begin{align*}
-  x &= \cfrac{2\Gamma_{i}} {(1-\Gamma_r)^2 + \Gamma_i^{2}} \\
-  x + x\Gamma_r^2 - 2 x \Gamma_r + x \Gamma_i^2 &= 2 \Gamma_i\\
-  \Gamma_r^2 - 2 \Gamma_r + 1 +  \Gamma_i^2 - \cfrac{2}{x} \Gamma_i &= 0  \\
- ( \Gamma_r-1)^2 + \left( \Gamma_i - \cfrac{1}{x} \right)^2  &= \left(
+$$
+  x = \cfrac{2\Gamma_{i}} {(1-\Gamma_r)^2 + \Gamma_i^{2}} \\
+  x + x\Gamma_r^2 - 2 x \Gamma_r + x \Gamma_i^2 = 2 \Gamma_i\\
+  \Gamma_r^2 - 2 \Gamma_r + 1 +  \Gamma_i^2 - \cfrac{2}{x} \Gamma_i = 0  \\
+ ( \Gamma_r-1)^2 + \left( \Gamma_i - \cfrac{1}{x} \right)^2  = \left(
                                                                \cfrac{1}{x}
                                                                \right)^{2} 
-\end{align*}
+$$
 
 
 
